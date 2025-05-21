@@ -1,0 +1,75 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "dana";
+  src: 
+    url("/fonts/dana-medium.eot") format("eot"),
+    url("/fonts/dana-medium.woff") format("woff"),
+    url("/fonts/dana-medium.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "dana";
+  src: 
+    url("/fonts/dana-bold.eot") format("eot"),
+    url("/fonts/dana-bold.woff") format("woff"),
+    url("/fonts/dana-bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: "dana", sans-serif;
+  color: #555;
+}
+
+* {
+  --sb-track-color: #232E33;
+  --sb-thumb-color: #3730a3;
+  --sb-size: 8px;
+}
+
+
+.ticket {
+    opacity: 0;
+}
+
+.image__placeholder {
+    /* height: 176px; */
+    animation: image-loading 1s linear infinite alternate;
+}
+
+@keyframes image-loading {
+    0% {
+        background-color: hsl(200, 20%, 80%);
+    }
+
+    100% {
+        background-color: hsl(200, 20%, 95%);
+    }
+}
+
+*::-webkit-scrollbar {
+  width: var(--sb-size);
+  height: var(--sb-size);
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  /* border-radius: 5px; */
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 5px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  * {
+    scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
+}
