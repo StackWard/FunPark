@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
 import AdminRoute from "./AdminRoute";
-import Dashboard from "./pages/dashboard";
+import Dashboard from "./pages/Dashboard";
 import PageNotFound from "./pages/PageNotFound";
 import Orders from "./pages/Orders";
 import Tickets from "./pages/Tickets";
