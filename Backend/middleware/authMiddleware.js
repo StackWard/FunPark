@@ -4,6 +4,13 @@ const dotenv = require("dotenv");
 // Reading config file
 dotenv.config({ path: "./config.env" });
 
+exports.checkRole = (req, res, next) => {
+  const role = req.userData.user.role;
+  if (role !== "admin") {
+    return res.status(401).json({ error: "You are Not Authorized to do this action" });
+  }
+};
+
 exports.verifyToken = (req, res, next) => {
   // Check if the request has Authorization Header
   if (!req.headers.authorization) {
@@ -20,11 +27,9 @@ exports.verifyToken = (req, res, next) => {
   try {
     // Verifing the user's JWT
     const payload = jsonwebtoken.verify(token, process.env.JWT_SECRET);
-    console.log("Payload:", payload);
 
     // Add JWT's data to the request object
     req.userData = payload;
-    console.log(payload);
     next();
   } catch (error) {
     res.status(401).json({ error: "Invalid token" });

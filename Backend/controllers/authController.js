@@ -21,7 +21,27 @@ exports.generateToken = (req, res) => {
             id: 1,
             username: "admin",
             name: "مدیر",
-            avatar: "https://example.com/avatar.jpg",
+            avatar: "http://127.0.0.1:8000/avatar.jpg",
+            role: "test",
+          },
+        },
+        JWT_SECRET
+      ),
+      success: true,
+    });
+  }
+
+  if (username === "guest" && password === "guest") {
+    // Generate a JWT based on the valid credentials.
+    return res.json({
+      token: jsonwebtoken.sign(
+        {
+          user: {
+            id: 2,
+            username: "guest",
+            name: "مهمان",
+            avatar: "http://127.0.0.1:8000/avatar.jpg",
+            role: "guest",
           },
         },
         JWT_SECRET

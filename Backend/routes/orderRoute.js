@@ -14,6 +14,6 @@ router.route("/status").get(authMiddleware.verifyToken, orderRouter.ordersStatus
 router
   .route("/:id")
   .get(orderRouter.getOrder)
-  .delete(authMiddleware.verifyToken, orderRouter.deleteOrder);
+  .delete(authMiddleware.verifyToken, authMiddleware.checkRole, orderRouter.deleteOrder);
 
 module.exports = router;

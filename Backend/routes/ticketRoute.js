@@ -8,9 +8,10 @@ const Router = express.Router();
 
 Router.route("/")
   .get(ticketRouter.getAllTickets)
-  .post(authMiddleware.verifyToken, ticketRouter.createTicket);
+  .post(authMiddleware.verifyToken, authMiddleware.checkRole, ticketRouter.createTicket);
 
 Router.route("/:id")
-  .delete(authMiddleware.verifyToken, ticketRouter.deleteTicket)
-  .put(authMiddleware.verifyToken, ticketRouter.updateTicket);
+  .delete(authMiddleware.verifyToken, authMiddleware.checkRole, ticketRouter.deleteTicket)
+  .put(authMiddleware.verifyToken, authMiddleware.checkRole, ticketRouter.updateTicket);
+
 module.exports = Router;
