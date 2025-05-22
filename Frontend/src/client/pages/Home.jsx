@@ -15,7 +15,7 @@ function Home({ floatingCartVisible, setFloatingCartVisible }) {
     return (
         <>
             <Header onTicketsClick={scrollToTickets} />
-            <main className="w-[1280px] mx-auto mt-10 mb-40">
+            <main className="max-w-[1280px] mx-auto mt-10 mb-40 max-xs:mb-20">
                 <TicketsList ref={ticketsRef} setFloatingCartVisible={setFloatingCartVisible} />
                 <About />
             </main>

@@ -7,11 +7,11 @@ function CartTicketsList() {
     const { state } = useContext(CartContext);
 
     return (
-        <div className="mt-40">
+        <div className="my-20 max-xs:mb-12 max-xs:px-4">
             {state.length === 0 ? (
                 <Error errorMesage="سبد خرید شما خالی است لطفا ابتدا بلیط های خود را انتخاب نمایید." />
             ) : (
-                <div className="grid grid-cols-2 gap-8">
+                <div className="grid grid-cols-2 max-xs:grid-cols-1 gap-8">
                     {state.map((ticket) => (
                         <CartTicket key={ticket.id} {...ticket} />
                     ))

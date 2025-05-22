@@ -10,7 +10,7 @@ function Input({ label, type = "text", name, value, onChange, onBlur, placeholde
                 onBlur={onBlur}
                 maxLength={maxLength}
                 placeholder={placeholder}
-                className={`w-full py-2 px-4 rounded outline-none placeholder:text-sm placeholder:opacity-50 border ${error ? "border-red-500" : "border-transparent"}`}
+                className={`w-full py-2 px-4 rounded outline-none max-xs:text-sm placeholder:text-sm placeholder:opacity-50 border ${error ? "border-red-500" : "border-transparent"}`}
             />
             {error && <p className="text-red-600 text-xs mt-3">{error}</p>}
         </div>
