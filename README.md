@@ -3,7 +3,9 @@
 FunPark is a web-based application designed to provide an engaging and interactive experience for users. This project leverages modern web technologies to deliver a seamless and enjoyable interface.
 
 ## Demo
-![The-Wild-Oasis-Demo](https://github.com/mersad-Bxtrue/The-Wild-Oasis/blob/master/public/demo.jpg)
+![Fun-Park-Demo](https://github.com/StackWard/FunPark/blob/main/Frontend/public/images/Client-Side-Demo.jpg?raw=true)
+![Fun-Park-Demo](https://github.com/StackWard/FunPark/blob/main/Frontend/public/images/Admin-Panel-Demo.jpg?raw=true)
+
 
 ## Features
 
