@@ -2,12 +2,12 @@ import Navbar from "./Navbar";
 
 function Header({ onTicketsClick }) {
     return (
-        <div className="w-full h-screen bg-[url(/images/header-background-image.jpg)] bg-cover bg-fixed object-cover">
+        <div className="w-full h-screen bg-[url(/images/header-background-image.jpg)] bg-cover bg-fixed max-xs:bg-local object-cover">
             <Navbar bgColor="bg-gray-700/30" />
             <div className="w-full text-center absolute bottom-10">
                 <button onClick={onTicketsClick} className="cursor-pointer bg-gray-800 opacity-95 px-3 py-2 rounded-md text-yellow-400 tracking-shadow-xl animate-bounce">
                     <svg
-                        className="w-7 h-7"
+                        className="w-7 h-7 max-xs:w-6 max-xs:h-6"
                         stroke="currentColor"
                         strokeWidth="2"
                         viewBox="0 0 24 24"

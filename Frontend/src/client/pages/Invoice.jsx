@@ -10,7 +10,7 @@ function Invoice() {
 
     return (
         <>
-            <div className="w-[1280px] mx-auto">
+            <div className="max-w-[1280px] mx-auto">
                 <Navbar bgColor="bg-gray-600/60" />
                 <Factor />
             </div>

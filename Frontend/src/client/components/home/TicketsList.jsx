@@ -26,7 +26,7 @@ function TicketsList({ ref, setFloatingCartVisible }) {
                     error ? (
                         <Error errorMesage="متاسفانه در دریافت لیست بلیط ها مشکلی به وجود آمده :(" />
                     ) : (
-                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10 w-full h-auto mt-10 mb-20 p-6 rounded-md ">
+                        <div className="grid grid-cols-4 max-xs:grid-cols-2 gap-10 max-xs:gap-4 w-full h-auto mt-10 max-xs:mt-2 mb-20 max-xs:mb-10 p-6 max-xs:px-4 rounded-md ">
                             {
                                 data?.data?.tickets.map((ticket) => (
                                     <Ticket {...ticket} setFloatingCartVisible={setFloatingCartVisible} key={ticket._id} />

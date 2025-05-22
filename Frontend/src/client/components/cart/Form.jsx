@@ -123,62 +123,63 @@ function Form() {
     };
 
     return (
-        <div className="my-20">
+        <>
             <SectionTitle>لطفا اطلاعات زیر را تکمیل کنید</SectionTitle>
-
-            <div className="flex gap-2 items-end mb-4">
-                <svg className="size-6" fill="none" stroke="#ffae00" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
-                </svg>
-                <p className="text-sm text-gray-600">توجه: اطلاعات را با دقت پر نمایید تا سفارش شما قابل پیگیری باشد.</p>
-            </div>
-
-            <form onSubmit={handleSubmit} className="bg-gray-100 p-4 rounded">
-                <div className="grid grid-cols-3 gap-10">
-                    <Input
-                        label="نام"
-                        name="firstName"
-                        value={formData.firstName}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        placeholder="مثال: محسن"
-                        error={errors.firstName}
-                    />
-                    <Input
-                        label="نام خانوادگی"
-                        name="lastName"
-                        value={formData.lastName}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        placeholder="مثال: نعمت زاده"
-                        error={errors.lastName}
-                    />
-                    <Input
-                        label="شماره تماس"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        onBlur={handleBlur}
-                        placeholder="مثال: 09119876543"
-                        error={errors.phone}
-                        maxLength={11}
-                    />
+            <div className="my-6 mb-24 max-xs:px-4 max-xs:my-2">
+                <div className="flex gap-2 items-end mb-4">
+                    <svg className="size-6 max-xs:hidden" fill="none" stroke="#ffae00" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+                    </svg>
+                    <p className="text-sm max-xs:text-xs text-gray-600">توجه: اطلاعات را با دقت پر نمایید تا سفارش شما قابل پیگیری باشد.</p>
                 </div>
 
-                <div className="flex gap-4 my-10">
-                    <div className="w-1/3 flex justify-between items-center p-4 bg-gray-600 text-white">
-                        <span>مجموع قیمت :</span>
-                        <span>{totalPrice.toLocaleString()} تومان</span>
+                <form onSubmit={handleSubmit} className="bg-gray-100 p-4 rounded max-xs:px-4 max-xs:mb-12">
+                    <div className="grid grid-cols-3 max-xs:grid-cols-1 gap-10 max-xs:gap-6">
+                        <Input
+                            label="نام"
+                            name="firstName"
+                            value={formData.firstName}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            placeholder="مثال: محسن"
+                            error={errors.firstName}
+                        />
+                        <Input
+                            label="نام خانوادگی"
+                            name="lastName"
+                            value={formData.lastName}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            placeholder="مثال: نعمت زاده"
+                            error={errors.lastName}
+                        />
+                        <Input
+                            label="شماره تماس"
+                            name="phone"
+                            value={formData.phone}
+                            onChange={handleChange}
+                            onBlur={handleBlur}
+                            placeholder="مثال: 09119876543"
+                            error={errors.phone}
+                            maxLength={11}
+                        />
                     </div>
-                    <button
-                        type="submit"
-                        className="w-2/3 border border-green-600 bg-green-600 hover:bg-green-600/10 hover:text-green-600 text-white font-bold text-lg p-4 duration-300"
-                    >
-                        ثبت نهایی سفارش
-                    </button>
-                </div>
-            </form>
-        </div>
+
+                    <div className="flex max-xs:flex-col gap-4 my-10 max-xs:text-sm">
+                        <div className="w-1/3 max-xs:w-full flex justify-between items-center p-4 bg-gray-600 text-white">
+                            <span>مجموع قیمت :</span>
+                            <span>{totalPrice.toLocaleString()} تومان</span>
+                        </div>
+                        <button
+                            type="submit"
+                            className="w-2/3 max-xs:w-full max-xs:text-base border border-green-600 bg-green-600 hover:bg-green-600/10 hover:text-green-600 text-white font-bold text-lg p-4 duration-300"
+                        >
+                            ثبت نهایی سفارش
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </>
     );
 }
 
