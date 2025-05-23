@@ -57,21 +57,21 @@ cd FunPark
 #### Install dependencies:
 Navigate to both the frontend and backend directories and install the necessary packages:
 ```bash
-cd frontend
+cd Frontend
 npm i
-cd ../backend
+cd ../Backend
 npm i
 ```
 
 ### Running the Application
 - Modify the `Backend/config.env` file with your own properties, then start the backend server.
   ```bash
-  cd backend
+  cd Backend
   npm start
   ```
 - Put the back-end URL to the `Frontend/.env` file. After that, simply start the front-end server:
   ```bash
-  cd frontend
+  cd Frontend
   npm run dev
   ```
 > Please note that if you want to run this project locally, just uncomment lines 13 to 24 of the /Backend/app.js file to bypass the browser SOP, then run the code.
