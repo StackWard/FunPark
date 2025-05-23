@@ -10,8 +10,8 @@
 ![Vite](https://img.shields.io/badge/vite-%236F46D8.svg?style=for-the-badge&logo=vite&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/tailwindcss-%230099FF.svg?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Context API](https://img.shields.io/badge/context--api-%237159c1.svg?style=for-the-badge&logo=react&logoColor=white)
-![React Hot Toast](https://img.shields.io/badge/react--hot--toast-%23CA4245.svg?style=for-the-badge&logo=react&logoColor=white)
 ![Axios](https://img.shields.io/badge/axios-%230077B5.svg?style=for-the-badge&logo=axios&logoColor=white)
+![React Hot Toast](https://img.shields.io/badge/react--hot--toast-%23CA4245.svg?style=for-the-badge&logo=react&logoColor=white)
 
 ## About The Project
 FunPark is a full-stack website made with React, Node.js, and MongoDB. Users can see and buy tickets for a made-up amusement park and get a receipt after buying. The project also includes an admin panel with JWT-based authentication, where admins can manage orders and tickets (create, edit, delete). State management is handled using Context API.
