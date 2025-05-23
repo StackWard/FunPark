@@ -1,15 +1,20 @@
 # FunPark
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![NodeJs](https://img.shields.io/badge/nodejs-%2318672d.svg?style=for-the-badge&logo=nodejs&logoColor=white)
-![MongoDB](https://img.shields.io/badge/mongodb-%23ECF6F6.svg?style=for-the-badge&logo=mongodb&logoColor=%E63946)
-![React Router](https://img.shields.io/badge/react--router--dom-%2318672d.svg?style=for-the-badge&logo=reactrouter&logoColor=white)
-![Context API](https://img.shields.io/badge/context--api-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
-![React Hot Toast](https://img.shields.io/badge/react--hot--toast-%23F24E1E.svg?style=for-the-badge&logo=react&logoColor=white)
+![React.js](https://img.shields.io/badge/react.js-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Node.js](https://img.shields.io/badge/node.js-339933.svg?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![MongoDB](https://img.shields.io/badge/mongodb-%23FFFFFF.svg?style=for-the-badge&logo=mongodb&logoColor=%2347A248)
+![React Router](https://img.shields.io/badge/react--router--dom-%23CA4245.svg?style=for-the-badge&logo=reactrouter&logoColor=white)
+![Express.js](https://img.shields.io/badge/express.js-%23339933.svg?style=for-the-badge&logo=express&logoColor=white)
+![Chart.js](https://img.shields.io/badge/chart.js-%23FFEB3B.svg?style=for-the-badge&logo=chartdotjs&logoColor=%23212121)
+![Vite](https://img.shields.io/badge/vite-%236F46D8.svg?style=for-the-badge&logo=vite&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/tailwindcss-%230099FF.svg?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![Context API](https://img.shields.io/badge/context--api-%237159c1.svg?style=for-the-badge&logo=react&logoColor=white)
+![React Hot Toast](https://img.shields.io/badge/react--hot--toast-%23CA4245.svg?style=for-the-badge&logo=react&logoColor=white)
+![Axios](https://img.shields.io/badge/axios-%230077B5.svg?style=for-the-badge&logo=axios&logoColor=white)
 
 ## About The Project
-FunPark is a web-based application designed to provide an engaging and interactive experience for users. This project leverages modern web technologies to deliver a seamless and enjoyable interface.
+FunPark is a full-stack website made with React, Node.js, and MongoDB. Users can see and buy tickets for a made-up amusement park and get a receipt after buying. The project also includes an admin panel with JWT-based authentication, where admins can manage orders and tickets (create, edit, delete). State management is handled using Context API.
 
 ## Online Demo
 - https://fun-park-git-main-mersads-projects-818de91c.vercel.app/
@@ -30,8 +35,8 @@ FunPark is a web-based application designed to provide an engaging and interacti
 
 ## Technologies Used
 
-- Frontend: JavaScript, HTML, CSS
-- Backend: Node.js, Express.js
+- Frontend: React.js, Javascript, Tailwind, ContextApi, ...
+- Backend: Node.js, Express.js, MongoDB, ...
 - Version Control: Git
 
 ## Getting Started
