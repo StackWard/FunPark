@@ -9,8 +9,11 @@ FunPark is a web-based application designed to provide an engaging and interacti
 ![Fun-Park-Demo](https://github.com/StackWard/FunPark/blob/main/Frontend/public/images/Client-Side-Demo.jpg?raw=true)
 ![Fun-Park-Demo](https://github.com/StackWard/FunPark/blob/main/Frontend/public/images/Admin-Panel-Demo.jpg?raw=true)
 
+## Back-End Flow Diagram
+![FunPark](https://github.com/user-attachments/assets/60341a43-ad4c-4b57-a04f-cc5af0913de4)
 
 ## Features
+
 
 - Interactive UI — A user-friendly interface that ensures an intuitive user experience.
 - Responsive Design — Optimized for various devices and screen sizes.
