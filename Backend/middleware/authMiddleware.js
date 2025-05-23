@@ -9,6 +9,7 @@ exports.checkRole = (req, res, next) => {
   if (role !== "admin") {
     return res.status(401).json({ error: "You are Not Authorized to do this action" });
   }
+  next();
 };
 
 exports.verifyToken = (req, res, next) => {
