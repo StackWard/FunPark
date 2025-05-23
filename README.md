@@ -28,7 +28,6 @@ FunPark is a full-stack website made with React, Node.js, and MongoDB. Users can
 
 ## Features
 
-
 - Interactive UI — A user-friendly interface that ensures an intuitive user experience.
 - Responsive Design — Optimized for various devices and screen sizes.
 - Modular Architecture — Organized codebase with separate frontend and backend directories for maintainability.
@@ -41,7 +40,7 @@ FunPark is a full-stack website made with React, Node.js, and MongoDB. Users can
 
 ## Getting Started
 
-To set up and run the FunPark project locally, follow these steps:
+To set up and run the FunPark project, follow these steps:
 
 ### Prerequisites
 
@@ -65,15 +64,15 @@ npm i
 ```
 
 ### Running the Application
-You can run the frontend and backend separately.
-- Start the backend server:
+- Modify the `Backend/config.env` file with your own properties, then start the backend server.
   ```bash
   cd backend
   npm start
   ```
-- Start the frontend server:
+- Put the back-end URL to the `Frontend/.env` file. After that, simply start the front-end server:
   ```bash
   cd frontend
   npm run dev
   ```
+> Please note that if you want to run this project locally, just uncomment lines 13 to 24 of the /Backend/app.js file to bypass the browser SOP, then run the code.
 
