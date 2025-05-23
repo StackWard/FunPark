@@ -22,7 +22,7 @@ exports.generateToken = (req, res) => {
             username: "admin",
             name: "مدیر",
             avatar: "http://127.0.0.1:8000/avatar.jpg",
-            role: "test",
+            role: "admin",
           },
         },
         JWT_SECRET
