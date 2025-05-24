@@ -64,6 +64,7 @@ npm i
 ```
 
 ### Running the Application
+> Please note that if you want to run this project locally, just uncomment lines 13 to 24 of the /Backend/app.js file to bypass the browser SOP, then run the code.
 - Modify the `Backend/config.env` file with your own properties, then start the backend server.
   ```bash
   cd Backend
@@ -74,5 +75,5 @@ npm i
   cd Frontend
   npm run dev
   ```
-> Please note that if you want to run this project locally, just uncomment lines 13 to 24 of the /Backend/app.js file to bypass the browser SOP, then run the code.
+
 
