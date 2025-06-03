@@ -15,9 +15,6 @@
 
 ## About The Project
 FunPark is a full-stack website made with React, Node.js, and MongoDB. Users can see and buy tickets for a made-up amusement park and get a receipt after buying. The project also includes an admin panel with JWT-based authentication, where admins can manage orders and tickets (create, edit, delete). State management is handled using Context API.
-
-## Online Demo
-- https://fun-park-git-main-mersads-projects-818de91c.vercel.app/
   
 ## Demo
 ![Fun-Park-Demo](https://github.com/StackWard/FunPark/blob/main/Frontend/public/images/Client-Side-Demo.jpg?raw=true)
